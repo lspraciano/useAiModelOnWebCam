@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "useaimodelonwebcam"
+version = "0.1.0"
+description = ""
+authors = ["Lucas Praciano <luskcct@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "^4.9.0.80"
+ultralytics = "^8.1.47"
+torch = { version = "^2.0.1+cu118", source = "torch118" }
+torchvision = { version = "^0.15.2+cu118", source = "torch118" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "torch118"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
